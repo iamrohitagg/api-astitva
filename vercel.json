@@ -4,6 +4,6 @@
     { "src": "api/**/*.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/create-order", "dest": "/api/create-order.js" }
+    { "src": "/create-order", "dest": "/api/server.js" }
   ]
 }
