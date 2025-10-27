@@ -1,6 +1,7 @@
 import Razorpay from "razorpay";
 
 export default async function handler(req, res) {
+  res.setHeader("Access-Control-Allow-Origin", "https://astitva-50l.pages.dev");
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
