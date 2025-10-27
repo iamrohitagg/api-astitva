@@ -1,7 +1,10 @@
 import Razorpay from "razorpay";
 
 export default async function handler(req, res) {
+  // to fix CORS error
   res.setHeader("Access-Control-Allow-Origin", "https://astitva-50l.pages.dev");
+  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
 
   // preflight
   if (req.method === "OPTIONS") {
